@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>حاسبة السعرات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="services.html">الخدمات</a>
+    <a href="calculator.html">الحاسبة</a>
+    <a href="about.html">من نحن</a>
+    <a href="contact.html">تواصل</a>
+</nav>
+
+<div class="container">
+    <h2>حاسبة احتياجاتك</h2>
+
+    <label>العمر</label>
+    <input id="age" type="number">
+
+    <label>الطول (سم)</label>
+    <input id="height" type="number">
+
+    <label>الوزن (كجم)</label>
+    <input id="weight" type="number">
+
+    <label>الجنس</label>
+    <select id="gender">
+        <option value="male">ذكر</option>
+        <option value="female">أنثى</option>
+    </select>
+
+    <label>النشاط</label>
+    <select id="activity">
+        <option value="1.2">قليل الحركة</option>
+        <option value="1.375">نشاط خفيف</option>
+        <option value="1.55">نشاط متوسط</option>
+        <option value="1.725">نشاط عالي</option>
+    </select>
+
+    <label>الهدف</label>
+    <select id="goal">
+        <option value="loss">خسارة وزن</option>
+        <option value="gain">زيادة وزن</option>
+        <option value="maintain">ثبات وزن</option>
+    </select>
+
+    <button class="button" onclick="calculate()">احسب</button>
+
+    <div id="results"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
